@@ -29,28 +29,35 @@ h1 {
     margin: 1rem;
 }
 
-nav ul {
+.navMenu ul {
     display: flex;
     flex-flow: row wrap;
-    gap: 0.5rem;
+    gap: 0rem;
     margin: 0;
     padding: 0;
 }
 
-nav li {
+.navMenu li {
     display: contents;
 }
 
-nav a {
+.navMenu a {
     padding: 0.3rem 1rem;
     text-decoration: none;
     color: hsl(0, 0%, 10%);
     background-color: hsl(0, 0%, 85%);
     border: 2px solid hsl(0, 0%, 70%);
-    border-radius: 3px;
+    border-width: 2px 0;
+    border-radius: 0px;
 }
-
-nav a:hover,
-nav a:focus-visible {
+.navMenu li:first-child a {
+    border-left-width: 2px;
+}
+.navMenu li:last-child a {
+    border-right-width: 2px;
+}
+.navMenu a:hover,
+.navMenu a:focus-visible {
     text-decoration: underline;
+    background-color: hsl(0, 0%, 90%);
 }
